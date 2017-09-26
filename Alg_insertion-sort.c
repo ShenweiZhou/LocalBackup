@@ -2,7 +2,7 @@
 //It is assumed that the numbers are already given.
 #include <stdio.h>
 int main(void){
-	const int n[]=[13.24.52.34.46.47];
+    int n[]={13,233,21,3,234,85,34};
     int i;
     int j;
 	int k;
@@ -18,7 +18,15 @@ int main(void){
 		}
 	}
 	
-	printf("The result of sorting is %d.\n", n[]);
+	printf("The result of sorting is .\n");
+	for (i=0;i<6;i++){
+		printf("%d ",n[i]);
+	}
+	
+	printf("\n");
+	
+	getchar();
+	getchar();
 	
 	return 0;
 }
