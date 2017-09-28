@@ -17,7 +17,7 @@ int main(void){
 	}
 	printf("\n");
 	
-	//Sorting starts
+	//sorting starts
 	for(i=0;i<5;i++){
 		s=i;
 		for(j=i+1;j<6;j++){

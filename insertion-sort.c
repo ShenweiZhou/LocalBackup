@@ -7,17 +7,25 @@ int main(void){
     int j;
 	int k;
 	
+	//before sorting
+	printf("Before sorting A= ");
+	for(i=0;i<6;i++){
+		printf("%d ",n[i]);
+	}
+	printf("\n");
+	
+	//sorting starts
 	for(i=1;i<6;i++){
 		j=i-1;
-		while(n[j]>n[i]){
-			k=n[j];
-			n[j]=n[i];
-			n[i]=k;
-			i--;
-			j--;
+		k=n[i];
+		while(j>=0 && n[j]>k){
+			n[j+1]=n[j];
+			--j;
 		}
+		n[j+1]=k;
 	}
 	
+	//show the result of sorting
 	printf("The result of sorting is .\n");
 	for (i=0;i<6;i++){
 		printf("%d ",n[i]);
